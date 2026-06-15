@@ -1,41 +1,82 @@
-# Repository for final project
-
 # Emotion Detection Web Application
 
-## Introduction
-Welcome to the final project for this course! In this project, you will demonstrate your knowledge and skills in app creation and web deployment. The project involves creating an emotion detection application using the Watson AI libraries and deploying it as a web application using Flask. You will also be required to perform various tasks and submit your results with specific nomenclature.
+A lightweight, responsive web application developed with Python and Flask that leverages the Watson NLP Emotion Detection service. The application analyzes user-submitted textual statements and outputs precise operational metric breakdowns for five core emotional spectrums: **Anger**, **Disgust**, **Fear**, **Joy**, and **Sadness**, alongside identifying the overall **Dominant Emotion**.
 
-## Emotion Detection
-Emotion detection goes beyond sentiment analysis by extracting more nuanced emotions like joy, sadness, anger, and more from text statements. This capability is essential for AI-based recommendation systems, chatbots, and various other applications. In this project, we will harness the power of Watson AI to create an emotion detection application.
+---
 
-## Project Tasks
-To successfully complete this project, you will need to perform the following tasks:
+## Final Project Summary
 
-### Task 1: Clone the Project Repository
-Start by cloning the project repository to your local environment. This will provide you with the necessary code and resources to begin your work.
-this is the original project link: https://github.com/ibm-developer-skills-network/oaqjp-final-project-emb-ai.git
-but I have cloned it on my local machine and pushed it again on new repo for a purpose of using it in the Cloud IDE this the link: https://github.com/voravan/Final-Project-Emotion-Detector for my own repo 
-### Task 2: Create an Emotion Detection Application
-Utilize the Watson NLP library to develop an emotion detection application. This application will analyze text input and identify the underlying emotions.
+This application serves as the final capstone project for the "Building and Deploying a Web App using Flask" course on Coursera, developed in partnership with IBM Skills Network. 
 
-### Task 3: Format the Output
-Ensure that the output of your emotion detection application is well-formatted and user-friendly. Users should be able to understand the emotions identified.
+The project demonstrates a complete end-to-end software engineering workflow:
+1. Building an application package using modular Python structures.
+2. Integrating external cloud APIs (Watson NLP runtime services via JSON/REST interfaces).
+3. Implementing functional web microframework services utilizing Flask routing.
+4. Setting up strict input error validation rules for server stability.
+5. Performing static code analysis via pylint to ensure institutional-grade PEP 8 compliance.
 
-### Task 4: Package the Application
-Package your application for ease of deployment. You should have a clear and concise set of instructions for deploying it.
+---
 
-### Task 5: Run Unit Tests
-Test your application thoroughly to ensure it functions as expected. Create unit tests to validate its behavior.
+## Key Features
+* Real-time Emotion Analysis: Seamless backend pipeline communicating directly with the Watson NLP Prediction service apiary layer.
+* Intuitive Web UI: Form-based responsive front-end dashboard built with HTML, CSS, and embedded JavaScript.
+* Robust Input Validation: Dynamic error handling infrastructure to manage edge cases and intercept empty strings or missing payload fields.
+* Strict Quality Standards: Backend components fully compliant with PEP 8 layout conventions, verified to achieve a 10.00/10 static code linting benchmark score via pylint.
 
-### Task 6: Deploy as a Web Application Using Flask
-Take your emotion detection application and deploy it as a web application using the Flask framework. This step involves making your application accessible over the web.
+---
 
-### Task 7: Incorporate Error Handling
-Implement robust error handling to ensure that your application gracefully handles unexpected situations.
+## Project Architecture & Layout
 
-### Task 8: Run Static Code Analysis
-Perform static code analysis to review your code for potential issues, code quality, and adherence to best practices.
+Final-Project-Emotion-Detector/
+│
+├── EmotionDetection/                # Internal application packaging
+│   ├── __init__.py                  # Packages module access namespaces
+│   └── emotion_detection.py         # Handles Watson API requests & translation
+│
+├── templates/                       # Frontend assets
+│   └── index.html                   # Core dashboard layout structure
+│
+├── static/                          # Presentation styles
+│   └── mywebscript.js               # Event routing and AJAX call management
+│
+├── server.py                        # Central Flask application deployment hub
+└── README.md                        # Project documentation
 
-By completing these tasks, you will have created a functional emotion detection web application that can be accessed by users on the internet.
+---
 
-Good luck with your project, and don't forget to save screenshots of your results as you progress. These will be required for your peer-graded assignment submission.
+## Prerequisites & Setup
+
+Ensure you have Python 3.8+ deployed in your workspace architecture.
+
+1. Environment Installation
+Install the necessary system dependencies and framework bindings within your active terminal context:
+pip install flask requests pylint
+
+2. Launching the Application
+Execute the localized network deployment target using the explicit Python runtime engine:
+python3.8 server.py
+
+*The microframework infrastructure will automatically bind to local addresses routing requests natively on port 5000.*
+
+---
+
+## Usage Profiles & API Endpoints
+
+### Direct Web Interface
+1. Navigate to your local preview engine or application container via http://localhost:5000.
+2. Enter any textual statement inside the diagnostic input bar (e.g., "I am glad this happened").
+3. Click Submit to process and view structural formatting metrics dynamically.
+
+### System Validation Constraints
+If a query parameter is submitted completely blank or containing whitespace padding, the platform gracefully catches the invalid request parameter state and returns a standardized handling output directly inside the UI matrix:
+
+Invalid text! Please try again!
+
+---
+
+## Code Diagnostics Quality Testing
+The system maintains highly strict structural code rules. To test file layouts against clean Python PEP 8 conventions:
+pylint server.py
+
+Expected Diagnostic Output Benchmark:
+Your code has been rated at 10.00/10
