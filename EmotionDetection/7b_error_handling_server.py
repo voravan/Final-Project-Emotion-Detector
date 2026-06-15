@@ -8,7 +8,7 @@ def emot_detector():
     text_to_analyze = request.args.get('textToAnalyze')
     response = emotion_detector(text_to_analyze)
     
-    # === THIS IS THE ERROR HANDLING BLOCK  ===
+    # Intercepting status code 400 empty dictionary responses 
     if response['dominant_emotion'] is None:
         return "Invalid text! Please try again!"
         
