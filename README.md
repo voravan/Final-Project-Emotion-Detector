@@ -25,25 +25,6 @@ The project demonstrates a complete end-to-end software engineering workflow:
 
 ---
 
-## Project Architecture & Layout
-
-Final-Project-Emotion-Detector/
-│
-├── EmotionDetection/                # Internal application packaging
-│   ├── __init__.py                  # Packages module access namespaces
-│   └── emotion_detection.py         # Handles Watson API requests & translation
-│
-├── templates/                       # Frontend assets
-│   └── index.html                   # Core dashboard layout structure
-│
-├── static/                          # Presentation styles
-│   └── mywebscript.js               # Event routing and AJAX call management
-│
-├── server.py                        # Central Flask application deployment hub
-└── README.md                        # Project documentation
-
----
-
 ## Prerequisites & Setup
 
 Ensure you have Python 3.8+ deployed in your workspace architecture.
