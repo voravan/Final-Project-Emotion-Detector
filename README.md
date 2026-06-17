@@ -1,5 +1,7 @@
 # Emotion Detection Web Application
 
+This is the original project link: https://github.com/ibm-developer-skills-network/oaqjp-final-project-emb-ai.git but I have cloned it on my local machine and pushed it again on new repo for a purpose of using it in the Cloud IDE this the link: https://github.com/voravan/Final-Project-Emotion-Detector for my own repository.
+
 A lightweight, responsive web application developed with Python and Flask that leverages the Watson NLP Emotion Detection service. The application analyzes user-submitted textual statements and outputs precise operational metric breakdowns for five core emotional spectrums: **Anger**, **Disgust**, **Fear**, **Joy**, and **Sadness**, alongside identifying the overall **Dominant Emotion**.
 
 ---
